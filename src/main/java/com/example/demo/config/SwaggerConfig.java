@@ -21,7 +21,7 @@ public class SwaggerConfig {
                 .apiInfo(getApiInfo())
                 .select()
                 // 指定swagger扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.fattyCorps.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))
                 .build();
     }
 
