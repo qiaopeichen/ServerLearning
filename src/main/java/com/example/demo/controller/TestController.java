@@ -36,16 +36,16 @@ public class TestController {
 //    }
 
     @GetMapping("/add")
-    public String add(){
+    public String add(String pAccount, String pPwd){
         Account account = new Account();
-        account.setAccount("zhangsan");
-        account.setPassword("zsmima123");
+        account.setAccount(pAccount);
+        account.setPassword(pPwd);
 //        try{
         accountMapper.insert(account);
 //        }catch (DataAccessException exception){
 //            log.info("aktest :" + exception.getMessage() + exception.getCause());
 //        }
-        return "";
+        return "addSuccess->" + pAccount + " pwd->" + pPwd;
     }
 
     @GetMapping("/del")
