@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.mapper.AccountMapper;
 import com.example.demo.obj.db.Account;
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
