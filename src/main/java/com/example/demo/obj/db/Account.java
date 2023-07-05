@@ -18,10 +18,11 @@ public class Account {
     // 逻辑删除
     @TableLogic
     private Integer del;
+    //@TableField(fill = FieldFill.INSERT) 是 MyBatis-Plus 中的注解，用于设置实体类中对应的字段在插入时需要自动填充。
     // 创建时间
-    @TableField(fill = FieldFill.INSERT)
+    @TableField(fill = FieldFill.INSERT) //插入时填充
     private String createTime;
     // 更新时间
-    @TableField(fill = FieldFill.INSERT_UPDATE)
+    @TableField(fill = FieldFill.INSERT_UPDATE) //插入和更新时都填充
     private String updateTime;
 }

@@ -21,6 +21,8 @@ import java.util.regex.Pattern;
 @Service
 public class LoginService {
 
+    //bean管理是指（1）spring创建对象 （2）spring注入属性。当我们在将一个类上标注@Service或者@Controller或@Component或@Repository注解之后，spring的组件扫描就会自动发现它，并且会将其初始化为spring应用上下文中的bean。 而且初始化是根据无参构造函数。
+    // 在这里 Autowired注解的作用是 自动创建对象
     @Autowired
     AccountMapper accountMapper;
 

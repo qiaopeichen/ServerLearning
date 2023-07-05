@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//@component是spring中的一个注解，它的作用就是实现bean的注入
+//配置类，当Account数据插入/更新时@TableField(fill = FieldFill.INSERT) ，会触发这里的代码
 @Component
 public class DaoTimeHandler implements MetaObjectHandler {
 

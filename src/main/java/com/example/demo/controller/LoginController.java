@@ -15,6 +15,13 @@ public class LoginController {
     @Autowired
     LoginService loginService;
 
+    //postman请求头 需要增加 Content-Type application/json
+
+    //当设置@RequestBody 后， postman调试post需要把参数写在请求的body里
+//    {
+//        "account":"hello777",
+//            "password":"hello888"
+//    }
     @PostMapping("/reg")
     public SRet<SRegMsg> reg(@RequestBody CRegMsg cRegMsg){
         SRet<SRegMsg> reg = loginService.reg(cRegMsg.getAccount(), cRegMsg.getPassword());
